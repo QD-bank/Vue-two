@@ -10,7 +10,9 @@ Vue有完整版和非完整版的区别
   
 ## template和render使用
 
-Vue完整版template的使用方法：直接写在HTML或JS上
+template:一个替换挂载的元素模板。挂载元素的内容都将被忽略，除非模板的内容有分发插槽。
+
+template的使用方法：直接写在HTML或JS上
 ```javascript
 <template>
   <div id='app'>
@@ -19,7 +21,9 @@ Vue完整版template的使用方法：直接写在HTML或JS上
   </div>
 </template>
 ```
-vue非完整版render的使用方法：
+render:字符串模板的代替方案，允许你发挥 JavaScript 最大的编程能力。该渲染函数接收一个 createElement 方法作为第一个参数用来创建 VNode。
+
+render的使用方法：
 
 render函数接受一个参数h，这个参数是vue传的；用这个参数去创建实例
 ```javascript
