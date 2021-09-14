@@ -32,6 +32,13 @@ render(h){
 }
 ```
 
+## template与render的区别
+
+> 1.Vue一般使用template创建HTML，而是用JS来创建HTML要使用render函数。
+> 2.template逻辑简单，理解起来相对容易，但灵活性不足；render渲染方式可以将JS发挥极致，通过createElement方式创建虚拟DOM，逻辑性强，适合复发的组件封装。
+> 3，render（高）的性能要比template（低）要高。
+> 4.render函数的优先级大于template（优先级可能会误导我们理解，换成权重更合适）但是要注意的是Musrache（双花括号）语法就不能再次使用了。
+
 ## 使用Codesandbox写Vue代码
 
 * 第一步：点击链接直接进入网页
